@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Adopt Don't Shop</title>
+    </head>
+</html>
+
+<body>
+    <nav>
+        <a href="/">Adopt Don't Shop!</a>
+    </nav>
+    <section>
+        {% for msg in get_flashed_messages() %}
+        <section>{{ msg }}</section>
+        {% endfor %}
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>
